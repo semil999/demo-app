@@ -24,6 +24,8 @@ function App() {
   }, []);
 
   return <>
+    {/* redux */}
+
     {/* <BrowserRouter>
       <Header />
       <Routes>
@@ -33,6 +35,7 @@ function App() {
       </Routes>
     </BrowserRouter> */}
 
+    {/* redux toolkit */}
     <BrowserRouter>
       <ToolkitHeader />
       <Routes>
