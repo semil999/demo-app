@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import { useDispatch, useSelector } from "react-redux";
+import { cartApiData, getData } from "./Components/Redux/Action/dataAction";
+import DemoCartWithRedux from "./Components/DemoCartWithRedux";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Header from "./Components/Header";
+import AddtoCart from "./Components/AddtoCart";
+import { getProductApi } from "./Components/ReduxToolkit/createSlice/createSlice";
+import Product from "./Components/toolkitComponents/Product";
+import Cart from "./Components/toolkitComponents/Cart";
+import ToolkitHeader from "./Components/toolkitComponents/ToolkitHeader";
+import { getcartdata } from "./Components/ReduxToolkit/toolkitAction/cartAction";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getData())
+    dispatch(cartApiData())
+    dispatch(getProductApi())
+    dispatch(getcartdata())
+  }, []);
+
+  return <>
+    {/* <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Navigate to={'/home'}/>}></Route>
+        <Route path="/home" element={<DemoCartWithRedux />}></Route>
+        <Route path="/cart" element={<AddtoCart />}></Route>
+      </Routes>
+    </BrowserRouter> */}
+
+    <BrowserRouter>
+      <ToolkitHeader />
+      <Routes>
+        <Route path="/" element={<Navigate to={'/product'}/>}></Route>
+        <Route path="/product" element={<Product />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
+      </Routes>
+    </BrowserRouter>
+
+  </>;
 }
 
 export default App;

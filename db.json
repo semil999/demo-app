@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productImage": "https://m.media-amazon.com/images/I/61onAgKP5gL._AC_UY218_.jpg",
+      "productName": "Dell MS116 1000Dpi USB Wired Optical Mouse, Led Tracking, Scrolling Wheel, Plug and Play.",
+      "productprice": 399,
+      "qty": 1
+    },
+    {
+      "id": 2,
+      "productImage": "https://m.media-amazon.com/images/I/41TiopG4SeL._SX300_SY300_QL70_FMwebp_.jpg",
+      "productName": "boAt Xtend/Xtend RTL Smartwatch with Alexa Built-in, 1.69” HD Display, Multiple Watch Faces, Stress Monitor, Heart & SpO2 Monitoring, 14 Sports Modes, 5 ATM & 7 Days Battery(Sandy Cream)",
+      "productprice": 1499,
+      "qty": 1
+    },
+    {
+      "id": 3,
+      "productImage": "https://m.media-amazon.com/images/I/516LU0H963L._AC_UY218_.jpg",
+      "productName": "Logitech B170 Wireless Mouse, 2.4 GHz with USB Nano Receiver, Optical Tracking, 12-Months Battery Life, Ambidextrous, PC/Mac/Laptop - Black",
+      "productprice": 499,
+      "qty": 1
+    },
+    {
+      "id": 4,
+      "productImage": "https://m.media-amazon.com/images/I/7156HUlSOmL._AC_UL400_.jpg",
+      "productName": "Mens Boss-ace Uniform Dress Shoe",
+      "productprice": 649,
+      "qty": 1
+    },
+    {
+      "id": 5,
+      "productImage": "https://m.media-amazon.com/images/I/61O0rXhhP6L._AC_UL400_.jpg",
+      "productName": "Redgear Cloak Wired RGB Wired Over Ear Gaming Headphones with Mic for PC",
+      "productprice": 499,
+      "qty": 1
+    },
+    {
+      "id": 6,
+      "productImage": "https://m.media-amazon.com/images/I/51DgLLc+LFL._SX522_.jpg",
+      "productName": "Redmi Pad | MediaTek Helio G99 | 26.95cm (10.61 inch) 2K Resolution & 90Hz Refresh Rate Display",
+      "productprice": 18999,
+      "qty": 1
+    }
+  ],
+  "cartdata": [
+    {
+      "id": 1,
+      "productImage": "https://m.media-amazon.com/images/I/61onAgKP5gL._AC_UY218_.jpg",
+      "productName": "Dell MS116 1000Dpi USB Wired Optical Mouse, Led Tracking, Scrolling Wheel, Plug and Play.",
+      "productprice": 399,
+      "qty": "2"
+    }
+  ]
+}
